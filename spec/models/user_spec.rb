@@ -18,7 +18,7 @@ RSpec.describe User, type: :model do
         end
 
         it "is invalid without a password" do
-          bad_user = User.new(name: "Matt", email: "matt@test.com", password: nil)
+          bad_user = User.new(name: "Matt", email: nil, password: nil)
           expect(bad_user).to_not be_valid
         end
 

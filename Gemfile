@@ -25,6 +25,11 @@ gem 'puma', '~> 3.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 gem 'bcrypt', '~> 3.1', '>= 3.1.11'
+gem 'paperclip', '~> 5.1'
+gem 'aws-sdk', '~> 2.3.0'
+gem 'active_model_serializers'
+gem 'dotenv-rails', require: 'dotenv/rails-now'
+
 group :test do
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
   gem 'database_cleaner', '~> 1.6', '>= 1.6.2'

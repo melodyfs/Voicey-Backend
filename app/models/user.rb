@@ -5,7 +5,7 @@ class User < ApplicationRecord
     attribute :password, :string
     before_save :encrypt_password
     before_create :generate_token
-
+    self.table_name = 'users'
 
     def self.authenticate(email, password)
         user = self.find_by_email(email)
