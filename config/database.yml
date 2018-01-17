@@ -22,3 +22,11 @@ production:
   pool: 5
   username: melodyfs
   password: mfs16
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: <%= ENV['DATABASE_URL'] %>
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
